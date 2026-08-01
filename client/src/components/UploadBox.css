@@ -1,0 +1,47 @@
+.upload-box{
+    width:500px;
+    margin:60px auto;
+
+    background:#222430;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    text-align:center;
+}
+
+.upload-box h2{
+    margin-bottom:15px;
+}
+
+.upload-box p{
+    margin-bottom:20px;
+    color:#bfbfbf;
+}
+
+.upload-box button{
+    margin-top:20px;
+
+    padding:12px 25px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+}
+.preview-image{
+    width:250px;
+    height:250px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    margin:20px 0;
+
+    border:3px solid #555;
+
+    box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
