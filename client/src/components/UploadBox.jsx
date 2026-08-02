@@ -60,6 +60,7 @@ function UploadBox() {
             console.log(response.data);
 
             toast.success(response.data.message);
+            setUploadedImage(response.data.imageUrl);
             /*
             IMPORTANT:
             Backend response dekhne ke baad hi ye line uncomment karna.
