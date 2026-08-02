@@ -5,6 +5,37 @@
 ![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white)
 ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=jsonwebtokens)
 
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=tokyonight)
+
+![GitHub Streak](https://streak-stats.demolab.com?user=YOUR_GITHUB_USERNAME&theme=tokyonight)
+
+
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=YOUR_GITHUB_USERNAME&theme=tokyo-night)
+
+![Trophy](https://github-profile-trophy.vercel.app/?username=YOUR_GITHUB_USERNAME&theme=tokyonight&no-frame=true)
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Poppins&size=28&duration=3500&pause=1000&color=00C2FF&center=true&vCenter=true&width=900&lines=Full+Stack+Developer;MERN+Stack+Developer;Cloud+Enthusiast;Problem+Solver;Always+Learning+New+Technologies)](https://git.io/typing-svg)
+
+<p align="center">
+
+<img src="https://skillicons.dev/icons?i=react,nodejs,express,mongodb,js,html,css,git,github,vscode"/>
+
+</p>
+
+![Stars](https://img.shields.io/github/stars/YOUR_USERNAME/UploadImgO?style=for-the-badge)
+
+![Forks](https://img.shields.io/github/forks/YOUR_USERNAME/UploadImgO?style=for-the-badge)
+
+![Issues](https://img.shields.io/github/issues/YOUR_USERNAME/UploadImgO?style=for-the-badge)
+
+![Last Commit](https://img.shields.io/github/last-commit/YOUR_USERNAME/UploadImgO?style=for-the-badge)
+
+## Live Demo
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-success?style=for-the-badge)](YOUR_LIVE_LINK)
+
+[![Source Code](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](YOUR_REPO_LINK)
 # UploadImgO
 
 UploadImgO is a full-stack image sharing web application built using the MERN Stack. It allows users to upload, store, preview, download, and manage images efficiently. The project uses Cloudinary for cloud image storage and MongoDB Atlas for storing image information.
