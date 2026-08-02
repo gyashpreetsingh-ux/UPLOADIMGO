@@ -11,10 +11,6 @@
 ![GitHub Streak](https://streak-stats.demolab.com?user=YOUR_GITHUB_USERNAME&theme=tokyonight)
 
 
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=YOUR_GITHUB_USERNAME&theme=tokyo-night)
-
-![Trophy](https://github-profile-trophy.vercel.app/?username=YOUR_GITHUB_USERNAME&theme=tokyonight&no-frame=true)
-
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Poppins&size=28&duration=3500&pause=1000&color=00C2FF&center=true&vCenter=true&width=900&lines=Full+Stack+Developer;MERN+Stack+Developer;Cloud+Enthusiast;Problem+Solver;Always+Learning+New+Technologies)](https://git.io/typing-svg)
 
 <p align="center">
