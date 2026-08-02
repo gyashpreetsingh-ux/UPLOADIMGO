@@ -1,23 +1,19 @@
 const mongoose = require("mongoose");
+const dns = require("dns");
+
+// Force Node to use Google DNS
+dns.setServers(["8.8.8.8"]);
 
 const connectDB = async () => {
-    try {
+  try {
+    await mongoose.connect(process.env.MONGODB_URI);
 
-        console.log("URI:", process.env.MONGODB_URI);
-
-        await mongoose.connect(
-  "mongodb+srv://gyashpreetsingh_db_user:Xtn7tl70y1PDiqNB@uploadimgo.n9eq7sq.mongodb.net/?retryWrites=true&w=majority&appName=UploadImgO"
-);
-
-        console.log("✅ MongoDB Connected");
-
-    } catch (error) {
-
-        console.log("❌ MongoDB Connection Failed");
-        console.log(error);
-
-        process.exit(1);
-    }
+    console.log("✅ MongoDB Connected");
+  } catch (error) {
+    console.error("❌ MongoDB Connection Failed");
+    console.error(error);
+    process.exit(1);
+  }
 };
 
 module.exports = connectDB;

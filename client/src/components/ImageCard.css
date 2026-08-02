@@ -1,0 +1,81 @@
+.image-card {
+    background: #202332;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.35s ease;
+}
+
+.image-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.5);
+}
+
+.image-card img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    display: block;
+}
+
+.image-info {
+    padding: 18px;
+}
+
+.image-info h3 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.upload-time {
+    color: #b3b3b3;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.image-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.download-btn,
+.delete-btn {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    padding: 12px;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.download-btn {
+    background: #22c55e;
+    color: white;
+}
+
+.download-btn:hover {
+    background: #16a34a;
+    transform: scale(1.04);
+}
+
+.delete-btn {
+    background: #ef4444;
+    color: white;
+}
+
+.delete-btn:hover {
+    background: #dc2626;
+    transform: scale(1.04);
+}

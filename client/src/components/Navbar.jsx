@@ -1,16 +1,43 @@
 import "./Navbar.css";
 
-function Navbar() {
-  return (
-    <nav className="navbar">
-      <h2 className="logo">UploadImgO</h2>
+const Navbar = () => {
 
-      <div className="nav-buttons">
-        <button>Login</button>
-        <button>Sign Up</button>
-      </div>
-    </nav>
-  );
-}
+    const token = localStorage.getItem("token");
+
+    const handleLogout = () => {
+        localStorage.removeItem("token");
+        window.location.reload();
+    };
+
+    return (
+        <nav className="navbar">
+
+            <div className="logo">
+                UploadImgO
+            </div>
+
+            <div className="nav-links">
+
+                <a href="/">Home</a>
+
+                {!token ? (
+                    <>
+                        <a href="/login">Login</a>
+                        <a href="/signup">Signup</a>
+                    </>
+                ) : (
+                    <button
+                        className="logout-btn"
+                        onClick={handleLogout}
+                    >
+                        Logout
+                    </button>
+                )}
+
+            </div>
+
+        </nav>
+    );
+};
 
 export default Navbar;

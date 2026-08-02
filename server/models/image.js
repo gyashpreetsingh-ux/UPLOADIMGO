@@ -6,8 +6,11 @@ const imageSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-
     publicId: {
+      type: String,
+      required: true,
+    },
+    fileName: {
       type: String,
       required: true,
     },
@@ -17,6 +20,4 @@ const imageSchema = new mongoose.Schema(
   }
 );
 
-const Image = mongoose.model("Image", imageSchema);
-
-module.exports = Image;
+module.exports = mongoose.model("Image", imageSchema);
