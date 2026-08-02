@@ -5,6 +5,10 @@
 ![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white)
 ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=jsonwebtokens)
 
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00C9FF,100:92FE9D&height=250&section=header&text=UploadImgO&fontSize=55&fontColor=ffffff&animation=fadeIn"/>
+</p>
+
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=tokyonight)
 
@@ -32,6 +36,14 @@
 [![Live Demo](https://img.shields.io/badge/Live-Demo-success?style=for-the-badge)](YOUR_LIVE_LINK)
 
 [![Source Code](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](YOUR_REPO_LINK)
+
+![Stars](https://img.shields.io/github/stars/USERNAME/UploadImgO?style=for-the-badge)
+
+![Forks](https://img.shields.io/github/forks/USERNAME/UploadImgO?style=for-the-badge)
+
+![Issues](https://img.shields.io/github/issues/USERNAME/UploadImgO?style=for-the-badge)
+
+![Repo Size](https://img.shields.io/github/repo-size/USERNAME/UploadImgO?style=for-the-badge)
 # UploadImgO
 
 UploadImgO is a full-stack image sharing web application built using the MERN Stack. It allows users to upload, store, preview, download, and manage images efficiently. The project uses Cloudinary for cloud image storage and MongoDB Atlas for storing image information.
