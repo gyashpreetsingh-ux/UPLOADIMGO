@@ -1,52 +1,75 @@
 const cloudinary = require("../config/cloudinary");
 const streamifier = require("streamifier");
 
-exports.uploadImage = async (req, res) => {
+// NEW
+const Image = require("../models/Image");
 
+const uploadImage = async (req, res) => {
     try {
 
         if (!req.file) {
             return res.status(400).json({
-                message: "No image selected"
+                message: "No image selected",
             });
         }
 
-        const streamUpload = () => {
+        const uploadFromBuffer = () => {
             return new Promise((resolve, reject) => {
 
-                const stream = cloudinary.uploader.upload_stream(
+                const uploadStream = cloudinary.uploader.upload_stream(
+
                     {
-                        folder: "UploadImgO"
+                        folder: "UploadImgO",
                     },
+
                     (error, result) => {
 
-                        if (result) {
-                            resolve(result);
-                        } else {
+                        if (error) {
                             reject(error);
+                        } else {
+                            resolve(result);
                         }
 
                     }
                 );
 
-                streamifier.createReadStream(req.file.buffer).pipe(stream);
+                streamifier.createReadStream(req.file.buffer).pipe(uploadStream);
 
             });
         };
 
-        const result = await streamUpload();
+        const result = await uploadFromBuffer();
+
+        // ===========================
+        // MongoDB Save (Enable Later)
+        // ===========================
+
+        /*
+        const newImage = new Image({
+            imageUrl: result.secure_url,
+            publicId: result.public_id,
+        });
+
+        await newImage.save();
+        */
 
         res.status(200).json({
-            message: "Image Uploaded Successfully ✅",
-            imageUrl: result.secure_url
+            message: "Image Uploaded Successfully",
+            imageUrl: result.secure_url,
+            publicId: result.public_id,
         });
 
     } catch (error) {
 
+        console.log(error);
+
         res.status(500).json({
-            message: error.message
+            message: "Upload Failed",
         });
 
     }
+};
 
+module.exports = {
+    uploadImage,
 };
